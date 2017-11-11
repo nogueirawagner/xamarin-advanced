@@ -3,21 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behavior="clr-namespace:Advanced.Lib.EntryBehavior"
              x:Class="Advanced.Views.XTriggerView">
-    
+
     <ContentPage.Content>
         <StackLayout>
-            <Entry Placeholder="Digite o seu nome">
+            <Entry x:Name="txtNome" Placeholder="Digite o seu nome" Text="">
                 <Entry.Behaviors>
                     <behavior:XUppercaseBehavior/>
                 </Entry.Behaviors>
-                 
+
                 <Entry.Triggers>
                     <!--O foco estiver no campo irá deixar o fundo azul e a cor da letra branco-->
                     <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
                         <Setter Property="BackgroundColor" Value="Blue" />
                         <Setter Property="TextColor" Value="Yellow" />
                     </Trigger>
-                    
+
                     <!--Qd perder o foco irá deixar o fundo azul e a cor da letra branco-->
                     <Trigger TargetType="Entry" Property="IsFocused" Value="False" >
                         <Setter Property="BackgroundColor" Value="Blue" />
@@ -25,6 +25,22 @@
                     </Trigger>
                 </Entry.Triggers>
             </Entry>
+
+            <!--Trigger baseado em dados-->
+            <Button Text="Enviar" TextColor="Black" BackgroundColor="Aqua">
+                <Button.Triggers>
+                    <DataTrigger 
+                        TargetType="Button" 
+                                 Binding="{Binding Source={x:Reference txtNome}, Path=Text.Length}"
+                                 Value="0">
+                        <Setter Property="TextColor" Value="White" />
+                        <Setter Property="BackgroundColor" Value="White" />
+                        <Setter Property="IsEnabled" Value="False" />
+
+                    </DataTrigger>
+                </Button.Triggers>
+            </Button>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
