@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Advanced"
+             xmlns:behavior="clr-namespace:Advanced.Lib.EntryBehavior"
+             x:Class="Advanced.Views.XBehaviorView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Digite o seu nome">
+                <Entry.Behaviors>
+                    <behavior:XUppercaseBehavior/>
+                </Entry.Behaviors>
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
