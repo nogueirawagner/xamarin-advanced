@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace Advanced.Lib.EntryBehavior
+namespace Advanced.Lib.Behaviors.EntryBehavior
 {
   public class XUppercaseBehavior : Behavior<Entry>
   {

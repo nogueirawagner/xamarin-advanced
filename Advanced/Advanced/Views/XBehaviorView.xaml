@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Advanced"
-             xmlns:behavior="clr-namespace:Advanced.Lib.EntryBehavior"
+             xmlns:behavior="clr-namespace:Advanced.Lib.Behaviors.EntryBehavior"
              x:Class="Advanced.Views.XBehaviorView">
     <ContentPage.Content>
         <StackLayout>
