@@ -47,6 +47,12 @@
     <Compile Include="Views\XBehaviorView.xaml.cs">
       <DependentUpon>XBehaviorView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\XListCustomView.xaml.cs">
+      <DependentUpon>XListCustomView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XListView.xaml.cs">
+      <DependentUpon>XListView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\XTriggerView.xaml.cs">
       <DependentUpon>XTriggerView.xaml</DependentUpon>
     </Compile>
@@ -83,6 +89,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\XTriggerView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\XListView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\XListCustomView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

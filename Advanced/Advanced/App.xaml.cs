@@ -10,7 +10,7 @@ namespace Advanced
     {
       InitializeComponent();
 
-      MainPage = new XTriggerView();
+      MainPage = new XListCustomView();
     }
 
     protected override void OnStart()
