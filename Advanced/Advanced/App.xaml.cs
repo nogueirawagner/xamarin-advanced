@@ -10,7 +10,7 @@ namespace Advanced
     {
       InitializeComponent();
 
-      MainPage = new XListCustomView();
+      MainPage = new XDataSelectorView();
     }
 
     protected override void OnStart()
