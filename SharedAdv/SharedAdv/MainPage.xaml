@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SharedAdv"
+             x:Class="SharedAdv.MainPage">
+        
+    
+    <StackLayout x:Name="container">
+            <Label Text="Eu sou xamarin forms"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+        <AbsoluteLayout x:Name="ctAbs">
+
+        </AbsoluteLayout> 
+    </StackLayout>
+
+  
+    
+    
+</ContentPage>
